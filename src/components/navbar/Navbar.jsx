@@ -4,14 +4,12 @@ import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ markup }) => {
-  const [isSidebarOpen, changeSidebar] = useState(false)
+  const [isSidebarOpen, changeSidebar] = useState(false);
   function toggle_sidebar() {
-    changeSidebar(!isSidebarOpen)
+    changeSidebar(!isSidebarOpen);
   }
 
-
   const [activeLink, setActiveLink] = useState("");
-
 
   useEffect(() => {
     switch (markup) {
@@ -37,38 +35,38 @@ const Navbar = ({ markup }) => {
       <div className="for_pc_navbar">
         <img className="logo_navbar" src={logo} alt="Advocates" />
         <ul className="navbar_ul_pc">
-          <li
-            className={`navbar_li_pc ${activeLink === "home" ? "circle" : ""}`}
-          >
-            <Link className="noline" to={`/`}>
+          <Link className="noline" to={`/`}>
+            <li
+              className={`navbar_li_pc ${activeLink === "home" ? "circle" : ""
+                }`}
+            >
               Home
-            </Link>
-          </li>
-          <li
-            className={`navbar_li_pc ${activeLink === "about" ? "circle" : ""}`}
-          >
-            <Link className="noline" to={`/about`}>
+            </li>
+          </Link>
+          <Link className="noline" to={`/about`}>
+            <li
+              className={`navbar_li_pc ${activeLink === "about" ? "circle" : ""
+                }`}
+            >
               About Us
-            </Link>
-          </li>
-          <li
-            className={`navbar_li_pc ${
-              activeLink === "contact" ? "circle" : ""
-            }`}
-          >
-            <Link className="noline" to={`/contact`}>
+            </li>
+          </Link>
+          <Link className="noline" to={`/contact`}>
+            <li
+              className={`navbar_li_pc ${activeLink === "contact" ? "circle" : ""
+                }`}
+            >
               Contact Us
-            </Link>{" "}
-          </li>
-          <li
-            className={`navbar_li_pc ${
-              activeLink === "practice" ? "circle" : ""
-            }`}
-          >
-            <Link className="noline" to={`/practice-area`}>
+            </li>
+          </Link>{" "}
+          <Link className="noline" to={`/practice-area`}>
+            <li
+              className={`navbar_li_pc ${activeLink === "practice" ? "circle" : ""
+                }`}
+            >
               Practice Area
-            </Link>
-          </li>
+            </li>
+          </Link>
           <button className="navbar_button_pc">Free Consultation</button>
         </ul>
       </div>
@@ -76,20 +74,19 @@ const Navbar = ({ markup }) => {
       <div className="for_mobile_navbar">
         <img className="logo_navbar" src={logo} alt="Advocates" />
         <div></div>
-        <span className="material-symbols-outlined" onClick={toggle_sidebar}>menu</span>
+        <span className="material-symbols-outlined" onClick={toggle_sidebar}>
+          menu
+        </span>
       </div>
 
-
-
-
-
-
-      <div className={` ${isSidebarOpen ? 'Sidebar_navbar': 'display_none'}`}>
-      <span className={`material-symbols-outlined close`} onClick={toggle_sidebar}>
-close
-</span>
-      <ul className="navbar_ul_mobile">
-
+      <div className={` ${isSidebarOpen ? "Sidebar_navbar" : "display_none"}`}>
+        <span
+          className={`material-symbols-outlined close`}
+          onClick={toggle_sidebar}
+        >
+          close
+        </span>
+        <ul className="navbar_ul_mobile">
           <li
             className={`navbar_li_pc ${activeLink === "home" ? "circle" : ""}`}
           >
@@ -105,18 +102,16 @@ close
             </Link>
           </li>
           <li
-            className={`navbar_li_pc ${
-              activeLink === "contact" ? "circle" : ""
-            }`}
+            className={`navbar_li_pc ${activeLink === "contact" ? "circle" : ""
+              }`}
           >
             <Link className="noline" to={`/contact`}>
               Contact Us
             </Link>{" "}
           </li>
           <li
-            className={`navbar_li_pc ${
-              activeLink === "practice" ? "circle" : ""
-            }`}
+            className={`navbar_li_pc ${activeLink === "practice" ? "circle" : ""
+              }`}
           >
             <Link className="noline" to={`/practice-area`}>
               Practice Area
@@ -124,7 +119,6 @@ close
           </li>
           <button className="navbar_button_pc">Free Consultation</button>
         </ul>
-        
       </div>
     </nav>
   );

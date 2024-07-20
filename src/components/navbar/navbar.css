@@ -1,7 +1,7 @@
 nav{
     width: 100vw;
     height: 13vh;
-    background-color: #A6E3E9;
+    background-color: var(--three);
     overflow: hidden;
 }
 .logo_navbar{
@@ -44,8 +44,8 @@ li{
     height: 40px;
     width: 160px;
     border-radius: 10px;
-    background-color: #E3FDFD;
-    color: black;
+    background-color: var(--one);
+    color: var(--blac);
     transition: all 0.3s ease;
 }
 
@@ -53,15 +53,15 @@ li{
     transform: translate(-5px, -5px);
 }
 .circle{
-    background-color: #71C9CE;
-    color: black;
+    background-color: var(--four);
+    color: var(--b);
     border-radius: 10px;
     padding: 10px;
 }
 
 .noline{
     text-decoration: none;
-    color: black;
+    color: var(--b);
 }
 
 
@@ -84,7 +84,7 @@ li{
 .Sidebar_navbar{
     height: 100vh;
     width: 100vw;
-    background-color: #CBF1F5;
+    background-color: var(--two);
 
     z-index: 10;
     position: fixed;

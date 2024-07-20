@@ -2,11 +2,11 @@
     background-color: black;
     height: 400px;
     width: 100vw;
-    color: white;
+    color: var(--one);
 }
 
 .w{
-    color: white;
+    color: var(--one);
 }
 .h2_in_foot{
     text-align: center;
@@ -15,7 +15,7 @@
     display: flex;
     margin: 20px;
     padding: 20px;
-    border: 2px solid white;
+    border: 2px solid var(--one);
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;

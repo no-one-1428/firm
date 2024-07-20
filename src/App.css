@@ -3,7 +3,7 @@
 .heading_after_nav {
     display: flex;
     flex-direction: column;
-    background-color: #E3FDFD;
+    background-color: var(--one);
     justify-content: center;
     align-items: center;
 
@@ -35,7 +35,7 @@
   }
   
   .Form_heading_hai {
-    background-color: #A6E3E9;
+    background-color: var(--three);
     border-radius: 10px;
     padding: 30px;
     margin-top: 20px; /* Adjust margin as needed */
@@ -50,7 +50,7 @@
 
   border-radius: 10px;
   
-  background-color: white;
+  background-color: var(--w);
   
   height: 50px;
   width: 200px;
