@@ -1,0 +1,72 @@
+/* App.css */
+
+.heading_after_nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3FDFD;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  
+  .main_heading_cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo_in_heading {
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .heading_1_main {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+
+    margin: 4px;
+
+    
+  }
+  
+  .Form_heading_hai {
+    background-color: #A6E3E9;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+
+  
+.button_consult{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  
+  background-color: white;
+  
+  height: 50px;
+  width: 200px;
+
+  font-size: 1.2rem;
+
+
+}
+.bond{
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+.section_heading_with_logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

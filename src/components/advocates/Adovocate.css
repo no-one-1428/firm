@@ -1,0 +1,89 @@
+.our_team_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+.adovates_cont{
+    margin: 10px;
+    width: 400px;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+
+    background-color: #E3FDFD;  
+    box-shadow:
+    inset 0rem -0.1rem 0.1rem rgb(0 0 0 / 30%),
+    0.1rem 0.1rem 0.1rem rgb(0 0 0 / 60%);
+    
+}
+.adovates_cont img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.other_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.heading_advocate_card{
+    margin: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.para_advocate_card{
+    font-size: 1rem;
+}
+.button_call_now{
+    width: 50%;
+    margin: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+
+    border-radius: 10px;
+
+}
+.text_call{
+    font-size: 1.3rem;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.section_idk_whyisthis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.h3_useless{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.our_team_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    margin: 20px;
+    margin-top: 40px;
+    font-weight: 800;
+
+
+}

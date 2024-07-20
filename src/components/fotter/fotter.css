@@ -1,0 +1,28 @@
+.fotter{
+    background-color: black;
+    height: 400px;
+    width: 100vw;
+    color: white;
+}
+
+.w{
+    color: white;
+}
+.h2_in_foot{
+    text-align: center;
+}
+.fotter_1_box{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+.call_foot{
+    font-size: 2.3rem;
+    overflow: hidden;
+}
