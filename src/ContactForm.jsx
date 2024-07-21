@@ -1,6 +1,7 @@
-import React from 'react'
-import { useState } from 'react';
-import './c.css'
+import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './c.css';
 
 const ContactForm = () => {
   const [fullName, setFullName] = useState('');
@@ -11,8 +12,33 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', { fullName, lastName, phoneNumber, email, description });
-    // Add your form submission logic here (e.g., API call, data processing)
+    fetch('https://formspree.io/f/xovajqyq', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        first_name: fullName,
+        last_name: lastName,
+        phone_number: phoneNumber,
+        email: email,
+        description: description
+      })
+    }).then(response => {
+      if (response.ok) {
+        toast.success('Your request has been submitted. We will reply promptly.');
+        // Clear the form fields after successful submission
+        setFullName('');
+        setLastName('');
+        setPhoneNumber('');
+        setEmail('');
+        setDescription('');
+      } else {
+        toast.error('Form submission error: ' + response.statusText);
+      }
+    }).catch(error => {
+      toast.error('Form submission error: ' + error);
+    });
   };
 
   return (
@@ -21,7 +47,8 @@ const ContactForm = () => {
       <br />
       <br />
       <form onSubmit={handleSubmit} className="form_heading">
-        <input className='first'
+        <input
+          className='first'
           type="text"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
@@ -29,7 +56,8 @@ const ContactForm = () => {
           required
         />
         <br />
-        <input  className='second'
+        <input
+          className='second'
           type="text"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
@@ -37,8 +65,8 @@ const ContactForm = () => {
           required
         />
         <br />
-
-        <input className='third'
+        <input
+          className='third'
           type="tel"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
@@ -46,16 +74,16 @@ const ContactForm = () => {
           required
         />
         <br />
-
-        <input className='fourth'
+        <input
+          className='fourth'
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email (optional)"
         />
         <br />
-
-        <textarea className='five'
+        <textarea
+          className='five'
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           placeholder="Description"
@@ -65,8 +93,9 @@ const ContactForm = () => {
         <br />
         <button type="submit" className='submit_button_form six'>Submit</button>
       </form>
+      <ToastContainer />
     </section>
   );
 };
 
-export default ContactForm
+export default ContactForm;

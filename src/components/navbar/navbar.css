@@ -17,6 +17,8 @@ li{
     display: none;
     /* display: none; flex */
     justify-content: space-between;
+    width: 99vw;
+    align-items: center;
 
 }
 .navbar_ul_pc{
@@ -39,14 +41,16 @@ li{
     transform: translate(-5px, -5px);
 }
 .navbar_button_pc{
-    font-size: 0.9rem;
-    font-weight: 500;
     height: 40px;
     width: 160px;
     border-radius: 10px;
-    background-color: var(--one);
+    background-color: var(--w);
     color: var(--blac);
     transition: all 0.3s ease;
+    border: none;
+    z-index: 3;
+
+    border: 1px solid black;
 }
 
 .navbar_button_pc:hover{
@@ -131,4 +135,7 @@ li{
     .for_mobile_navbar{
         display: grid;
     }
+}
+.hmm-hv{
+    color: black;
 }

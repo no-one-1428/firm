@@ -1,0 +1,23 @@
+.Practice_area{
+    width: 90vw;
+    margin: 5%;
+}
+.part_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.main_office{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+.district_court{
+    height: 400px;
+
+}

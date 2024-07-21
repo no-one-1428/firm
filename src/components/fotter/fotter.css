@@ -1,6 +1,5 @@
 .fotter{
     background-color: black;
-    height: 400px;
     width: 100vw;
     color: var(--one);
 }
@@ -13,16 +12,79 @@
 }
 .fotter_1_box{
     display: flex;
-    margin: 20px;
     padding: 20px;
-    border: 2px solid var(--one);
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 
 
 }
 .call_foot{
-    font-size: 2.3rem;
+    font-size: 2rem;
     overflow: hidden;
+}
+
+@media screen and (max-width:950px) {
+    .fotter_1_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+.bf{
+    margin-top: 30px;
+    cursor: pointer;
+}
+.braker_f{
+    height: 2px;
+    width: 100vw;
+    overflow: hidden;
+    background-color: white;
+
+}
+.second_half_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.second_half_foot{
+    margin-top: 30px;
+}
+@media screen and (max-width:550px) {
+    .second_half_list{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+
+
+    }
+
+    
+}
+.last_foot{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+}
+.fa_socials{
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+.herf_phone{
+    color: white;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.pointers{
+    cursor: pointer;
 }

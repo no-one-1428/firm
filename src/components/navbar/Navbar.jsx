@@ -67,7 +67,10 @@ const Navbar = ({ markup }) => {
               Practice Area
             </li>
           </Link>
-          <button className="navbar_button_pc">Free Consultation</button>
+          <button className="navbar_button_pc">
+          <a className="hmm-hv" href="tel:91-7428476457">Free Consultation</a>
+            </button>
+          
         </ul>
       </div>
 

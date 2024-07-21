@@ -1,0 +1,38 @@
+
+.about-us {
+    padding: 20px;
+    background-color: var(--one);
+    font-family: Arial, sans-serif;
+    color: var(--blac);
+  }
+  
+  .about-intro,
+  .about-experience,
+  .about-team,
+  .about-commitment {
+    margin-bottom: 30px;
+  }
+  
+  .about-intro h1,
+  .about-experience h2,
+  .about-team h2,
+  .about-commitment h2 {
+    color: var(--blac);
+    margin-bottom: 10px;
+  }
+  
+  .about-experience ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-experience ul li {
+    background: var(--two);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .about-experience ul li strong {
+    color: var(--blac);
+  }
