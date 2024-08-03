@@ -4,6 +4,7 @@ import advocate_manju_prajapati from "../../assets/advocate/advocate_manju_praja
 import anshul from "../../assets/advocate/anshul.jpeg";
 import sanjev_goyal from "../../assets/advocate/sanjev_goyal.jpeg";
 import visas from "../../assets/advocate/vikas.jpeg";
+import five from "../../assets/advocate/five.jpeg"
 
 function Advocates() {
   return (
@@ -92,6 +93,28 @@ function Advocates() {
             </button>
           </section>
         </section>
+
+
+        <section className="adovates_cont ">
+          <img src={five} alt="Advocate Anshul Kumar" />
+          <section className="other_details">
+            <h1 className="heading_advocate_card">Adv. Avnish Kumar Shukla</h1>
+            <p className="para_advocate_card">
+            Avnish Kumar Shukla brings 16 years of expertise to our firm, blending youth with deep legal insight for exceptional advocacy. Discover unparalleled commitment and experience in every case.
+            </p>
+            <button className="button_call_now">
+              <a className="hmm-hv" href="tel:91-7428476457">
+                <section className="section_idk_whyisthis">
+                  <h3 className="h3_useless">Call Me</h3>
+                  <span className="material-symbols-outlined text_call">call</span>
+                </section>
+              </a>
+            </button>
+          </section>
+        </section>
+
+
+
       </div>
     </div>
   );
